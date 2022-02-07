@@ -15,9 +15,12 @@
   </head>
 
   <body>
+      <!-- Creaos el contenedor container, el cual es una clase propia de boostrap -->
     <div class="container">
-      <h1>Aplicación calculadora</h1>
+      <h1 class="mt-4">Aplicación calculadora</h1>
+      <!-- El formulario nos servirá para hacer el ingreso de nuestros operandos -->
       <form action="" id="forma">
+          <!-- Los div con la clase de "mb-3" significa margin buttom = 3 -->
         <div class="mb-3">
           <label for="operandoA">Operando A</label>
           <input
@@ -27,7 +30,9 @@
             class="form-control"
             placeholder="Escriba el operando A"
           />
-          <label for="operandoA">Operando B</label>
+        </div>
+        <div class="mb-3">
+            <label for="operandoA">Operando B</label>
           <input
             type="number"
             name="operandoB"
@@ -37,7 +42,11 @@
           />
         </div>
       </form>
+      <button class="btn btn-primary mb-3" onclick="sumar()">Sumar</button>
     </div>
+
+    <!-- Clases de JS necesarias para trabajar con bootstrap -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
