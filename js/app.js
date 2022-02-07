@@ -7,7 +7,7 @@ let sumar = () =>{
     let opA = forma["operandoA"];
     let opB = forma["operandoB"];
 
-    let res = opA.value + opB.value;
+    let res = parseInt(opA.value) + parseInt(opB.value);
 
     document.getElementById("resultado").innerHTML = `Resultado de la suma: ${res}`
 
